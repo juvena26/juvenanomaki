@@ -1,2 +1,2 @@
-# juvenanomaki
-Personal project
+# ジュベナさんの勉強用
+ジュベナさんの勉強用です。

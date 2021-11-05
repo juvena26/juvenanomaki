@@ -1,0 +1,266 @@
+body {
+    background-image: url(images/bg1.jpg);
+}
+
+html {
+    height: 100%
+}
+
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+    color: #ff7171;
+    font-size: 60px!important;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 40px!important;
+    }
+}
+
+a {
+    font-size: small;
+    color: blueviolet!important;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main-title {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.thick-title {
+    font-weight: 700!important;
+    color: #ff7171!important;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/*new memo*/
+
+.hide {
+    display: none;
+}
+
+#controls img {
+    width: 28px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+}
+
+#controls img:hover,
+#controls img:focus {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    position: relative;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+#notes ul {
+    overflow: hidden;
+    padding: 15px;
+}
+
+ul li {
+    margin: 15px;
+    float: left;
+    position: relative;
+}
+
+
+/*divの<ul>*/
+
+ul li div {
+    text-decoration: none;
+    color: #000;
+    background: #feffde;
+    display: block;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    transition: -moz-transform .15s linear;
+    -o-transition: -o-transform .15s linear;
+    -webkit-transition: -webkit-transform .15s linear;
+    border-style: none;
+}
+
+ul li div img {
+    padding: 1px 3px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul li textarea {
+    font-family: 'Chewy', arial, sans-serif;
+    background: rgba(0, 0, 0, 0);
+    /* transparent background */
+    resize: none;
+    padding: 3px;
+    border-style: none;
+    overflow-y: hidden;
+}
+
+.note-title {
+    font-size: 140%;
+    font-weight: bold;
+    height: 30px;
+    width: 90%;
+}
+
+.note-content {
+    font-size: 120%;
+    height: 100px;
+    width: 95%;
+}
+
+#nav_bar ul li:nth-child(even) div {
+    transform: none!important;
+    -webkit-transform: none;
+    -moz-transform: none
+}
+
+
+/*divの<ul>ですが、navbarの<ul>にも反応*/
+
+ul li:nth-child(even) div {
+    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+}
+
+
+/*divの<ul>ですが、navbarの<ul>にも反応*/
+
+ul li:nth-child(3n) div {
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+}
+
+ul li:nth-child(5n) div {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    position: relative;
+    top: -10px;
+}
+
+ul li div:hover,
+ul li div:focus {
+    -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+}
+
+
+/* define 3 different colours for the notes */
+
+
+/*divの<ul>ですが、反応してない*/
+
+ul li div.color1 {
+    background: #ffc;
+}
+
+ul li div.color2 {
+    background: #cfc;
+}
+
+ul li div.color3 {
+    background: #ccf;
+}
+
+.float1 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 75px;
+    background-color: white;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float2 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 10px;
+    background-color: #fff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.move_text {
+    color: plum;
+    font-size: larger;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    margin-left: 45%;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 45%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .move_text {
+        margin-left: 25%;
+        animation: slide 4s 1;
+    }
+    @keyframes slide {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 25%;
+            width: 100%;
+        }
+    }
+}
