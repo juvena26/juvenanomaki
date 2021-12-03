@@ -25,6 +25,7 @@ a {
     color: blueviolet!important;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: solid;
 }
 
 .main-title {
@@ -263,4 +264,64 @@ ul li div.color3 {
             width: 100%;
         }
     }
+}
+
+.move_text1 {
+    color: plum;
+    font-size: larger;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    margin-left: 30%;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 45%;
+        width: 100%;
+    }
+}
+
+.j_logo1 {
+    width: 300px;
+    height: auto;
+}
+
+.j_webname {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.j_logo2 {
+    width: auto;
+    height: auto;
+    background-color: #FFF;
+}
+
+.roles li {
+    margin-top: 7.5px;
+    margin-bottom: 0;
+    float: none;
+    color: blueviolet;
+    list-style: disc;
+}
+
+.roles a {
+    font-style: italic!important;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.roles a {
+    color: #ff7171!important;
+}
+
+.btn,
+.btn-primary {
+    background-color: transparent!important;
+    border-color: transparent!important;
 }
