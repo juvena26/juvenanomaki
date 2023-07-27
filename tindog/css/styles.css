@@ -24,6 +24,9 @@ p {
     font-size: 2.5rem;
     line-height: 1.5;
 }
+.sub-heading{
+    color: #fff;
+}
 
 .section-heading {
     font-size: 2rem;
@@ -144,9 +147,11 @@ p {
 }
 
 .testimonial-image {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+    border-radius: 50%;
+    
 }
 
 #press {
