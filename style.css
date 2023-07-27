@@ -1,3 +1,7 @@
+html,body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 
+    ;
+  }
 body {
     background-image: url(images/bg1.jpg);
 }
@@ -13,19 +17,55 @@ h1 {
     font-size: 60px!important;
     margin: auto;
 }
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    top-nav
+    li{
+list-style: none;
+text-decoration: none;
+
+    }
+}
+.top-navlink{
+    color: #e86be8;
+    font-size: 16px;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 40px!important;
     }
 }
+.item{
+    border-bottom: 1px solid #eb9beb;
+
+}
+.right-btn{
+    background-color: #ccf;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white 1px solid;
+}
+.menu{
+border:1px solid #eb9beb;
+}
 
 a {
     font-size: small;
-    color: blueviolet!important;
+   
     font-weight: 700;
     cursor: pointer;
     text-decoration: solid;
+}
+.link{
+    color: #e86be8!important;
+    font-weight: normal;
 }
 
 .main-title {
@@ -203,8 +243,8 @@ ul li div.color3 {
     height: 60px;
     bottom: 20px;
     right: 75px;
-    background-color: white;
-    color: #FFF;
+    background-color: #ccf;
+ color: #ff7171;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
@@ -216,8 +256,8 @@ ul li div.color3 {
     height: 60px;
     bottom: 20px;
     right: 10px;
-    background-color: #fff;
-    color: #FFF;
+    background-color:#ccf;
+color: #30b630;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
@@ -230,7 +270,7 @@ ul li div.color3 {
 }
 
 .move_text {
-    color: plum;
+    color: #eb9beb ;
     font-size: larger;
     animation-name: slide;
     animation-duration: 4s;
